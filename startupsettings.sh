@@ -7,6 +7,8 @@ echo " - Installs updates "
 echo " - Installs git "
 echo " - Installs puppet "
 echo " - Copies h1 module from https://github.com/EmreJM/h1.git "
+echo " - Moves module to where it should be which is /etc/puppet/modules "
+echo " - Applies the h1 module (which just installs ssh currently)"
 
 tput -T xterm sgr0
 
