@@ -13,7 +13,9 @@ tput -T xterm sgr0
 setxkbmap -layout fi
 sudo apt-get update
 sudo apt-get install -y git puppet
-git clone https://github.com/EmreJM/h1.git 
+git clone https://github.com/EmreJM/h1.git
+sudo mv /h1/sshnova /etc/puppet/modules/
+sudo puppet apply -e 'class {"sshnova":}'
 
 tput -T xterm setaf 6
 
